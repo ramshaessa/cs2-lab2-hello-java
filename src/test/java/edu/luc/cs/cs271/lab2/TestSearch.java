@@ -2,6 +2,7 @@ package edu.luc.cs.cs271.lab2;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.util.List;
 
 public class TestSearch {
   
@@ -12,31 +13,84 @@ public class TestSearch {
       array[i] = new Team("Team " + s, "Coach " + s, i * 100 + 50);
     }
     return array;
-  }
+        
+    }
+  
 
   // TODO makeListFixture
 
   @Test
   public void testFindPositionArray0() {
-    final Team[] arr = makeArrayFixture(0);
-    assertFalse(Search.findTeamPosition(arr, "Team 5").isPresent());
+  final Team[] arr = makeArrayFixture(0);
+  assertFalse(Search.findTeamPosition(arr, "Team 5").isPresent());
   }
+     
 
   @Test
   public void testFindPositionArray10s() {
-    final Team[] arr = makeArrayFixture(10);
-    assertTrue(Search.findTeamPosition(arr, "Team 5").isPresent());
+  final Team[] arr = makeArrayFixture(10);
+  assertTrue(Search.findTeamPosition(arr, "Team 5").isPresent());
   }
+  
 
   @Test
   public void testFindPositionArray10f() {
     final Team[] arr = makeArrayFixture(10);
     assertFalse(Search.findTeamPosition(arr, "Team 11").isPresent());
-  }
+    }
+  
   
   // TODO: testFindPositionList0, 10s, 10f
+  @Test
+  public void testFindPositionList0(){
+  final Team[] arr = makeArrayFixture(0);
+  assertFalse(Search.FindPositionList(List, "Team 0").isPresent());
+      }
+  
+
+@Test
+public void testFindPositionList10s(){
+    final Team[] arr = makeArrayFixture(10);
+    assertTrue(Search.findTeamPosition(List,"Team 5").isPresent());
+    }
+
+
+@Test    
+public void testFindPositionList10f(){
+    final Team[] arr = makeArrayFixture(10);
+    assertFalse(Search.findTeamPosition(List, "Team 12").isPresent());
+    }
+
   
   // TODO: testFindMinFundingArray for several sizes and scenarios
+  @Test
+ public void TestFindMinFundingArray(){
+ final Team[] arr = makeArrayFixture(0);
+ assertTrue(Search.findMinFundingArray(arr, "0"). isPresent());
+ }
+ 
+ 
+ 
+@Test
+public void TestFindMinFundingArray(){ 
+final Team[] arr = makeArrayFixture(5);
+assertFalse(Search.findMinFinding(arr, "10"). isPresent());
+}
+
+
+
+@Test
+public void FindMinFundingArray(){
+final Team[] arr = makeArrayFixture(10);
+assertFalse(Search. findMinFunding(arr, "10"). isPresent()
+}
+
+
+
+
+  
 
   // TODO: testFindMinFundingArrayFast for several sizes and scenarios
-}
+
+
+
