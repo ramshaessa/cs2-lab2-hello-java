@@ -84,7 +84,7 @@ public class Search {
     
     // Gets the array size
         final int size = arr.length;
-    final int size = arr.length;
+    final int Size = arr.length;
         for (int i = 0; i < size; i++) {
     // Initially consider the entire index range of the array
     int low = 0;

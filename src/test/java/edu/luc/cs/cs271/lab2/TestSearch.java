@@ -90,7 +90,7 @@ assertFalse(Search. FindMinFunding(arr, "10"). isPresent());
 public void FindMinFundingArrayFast(){
     final Team[] arr = makeArrayFixture(5);
 assertFalse(Search. FindMinFundingArrayFast(arr, "6"). isPresent());
-}}
+}
 
 @Test
 public void FindMinFundingArrayFast(){
