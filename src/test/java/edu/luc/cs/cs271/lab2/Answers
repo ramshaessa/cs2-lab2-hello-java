@@ -1,0 +1,18 @@
+
+
+
+What happens in the case of binary search if the array is not sorted?
+
+It will not be applied on unsorted list as it only works on sorted list. Instead, one needs to use the linear search to have it work. 
+
+What is the purpose of constructor argument validity checking?
+
+The ideal is to fail as soon as possible if the error occurs.
+
+What is the purpose of using the keyword final with variables and arguments?
+
+The purpose is that programmers should know that they should not change the value of the variable. 
+
+What are alternatives to using Optional and how do they compare?
+
+Null is an alternatives to using Optional. However, Optional is better to use. 

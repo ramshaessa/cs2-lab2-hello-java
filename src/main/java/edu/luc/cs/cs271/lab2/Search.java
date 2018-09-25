@@ -60,11 +60,15 @@ public class Search {
           System.out.println(arr[i].getName());
           return Optional.of(i);
       }
-    }
+}
+
     // If it does not exist in the array then return an index of -1
     
-    return Optional.empty();
-  }
+    return Optional.empty(); {
+        
+}}
+
+  
   
   /** 
    * Looks for the position of the poorest team that has at least 

@@ -72,7 +72,7 @@ public void testFindPositionList10f(){
  
  
 @Test
-public void TestFindMinFundingArray(){ 
+public void FindMinFundingArray(){ 
 final Team[] arr = makeArrayFixture(5);
 assertFalse(Search.findMinFinding(arr, "10"). isPresent());
 }
@@ -82,12 +82,21 @@ assertFalse(Search.findMinFinding(arr, "10"). isPresent());
 @Test
 public void FindMinFundingArray(){
 final Team[] arr = makeArrayFixture(10);
-assertFalse(Search. findMinFunding(arr, "10"). isPresent()
+assertFalse(Search. FindMinFunding(arr, "10"). isPresent());
 }
 
 
+@Test
+public void FindMinFundingArrayFast(){
+    final Team[] arr = makeArrayFixture(5);
+assertFalse(Search. FindMinFundingArrayFast(arr, "6"). isPresent());
+}}
 
-
+@Test
+public void FindMinFundingArrayFast(){
+    final Team[] arr = makeArrayFixture(5);
+assertTrue(Search. FindMinFundingArrayFast(arr, "5"). isPresent());
+}}
   
 
   // TODO: testFindMinFundingArrayFast for several sizes and scenarios
