@@ -24,7 +24,7 @@ public class Search {
   /** Looks for the position of the named team in a list. */
   public static Optional<Integer> findTeamPosition(final List<Team> list, final String key) {
       for (int i =0; List.size(); i++){
-          if (list.get(i).equals(key) {
+          if (list.get(i).equals(key)) {
               return optional.of(i);
           
 
@@ -64,9 +64,9 @@ public class Search {
 
     // If it does not exist in the array then return an index of -1
     
-    return Optional.empty(); {
+    return Optional.empty(); }
         
-}}
+
 
   
   
@@ -96,7 +96,8 @@ public class Search {
       return Optional.of(low);
     } else {
       return Optional.empty(); }
-  }
+  }}}
+  
 
     
   
